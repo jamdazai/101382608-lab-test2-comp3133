@@ -1,59 +1,57 @@
-# 101382608LabTest2Comp3133
+# Jam Furaque - SpaceX Launch Explorer
+Welcome to **SpaceX Launch Explorer**, a sleek Angular web app built for **COMP 3133 - Full Stack Development 2 (Lab Test 2)**. It lets you browse and filter historic SpaceX missions like you’re the mission director at Cape Canaveral — but in dark mode.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
+## Features
 
-## Development server
+- 🔍 Filter launches by:
+  - **Launch Year**
+  - **Launch Status**
+  - **Landing Status**
+- 🧠 Mission cards packed with:
+  - Patch image
+  - Rocket details
+  - Launch site info
+  - External links to Article, Wikipedia, and Video
+- 📱 **Responsive UI** (From desktops to pocket rockets)
+- 🎨 Cosmic styling with Angular Material + Custom SCSS
 
-To start a local development server, run:
+## 🧑‍💻 Developer Info
+
+- **Name**: Jam Furaque  
+- **Student ID**: 101382608  
+- **Course**: COMP 3133  
+- **Assignment**: Lab Test 2 - SpaceX Explorer App  
+
+## 🛠️ Built With
+
+- Angular 17+
+- Angular Material
+- TypeScript
+- HTML & SCSS
+- SpaceX API v3
+
+## 🚀 Getting Started
+
+To launch this app locally:
 
 ```bash
+# Clone the repo
+git clone https://github.com/jamdazai/101382608-lab-test2-comp3133.git
+cd 101382608-lab-test2-comp3133
+
+# Install dependencies
+npm install
+
+# Launch the app
 ng serve
+
+# Visit in your browser
+http://localhost:4200/
+
 ```
+## 🧪 How to Use
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Use the dropdowns at the top to filter missions by year, launch success, or landing success.
+- Click any mission card to view detailed info.
+- Use the Back to List button to return.
+- Repeat. Enjoy.

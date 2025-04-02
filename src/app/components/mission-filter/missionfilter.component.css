@@ -1,0 +1,18 @@
+/*@author: Jam Furaque
+YOU, YEAH YOU.
+DO YOU KNOW THIS FILE?? YEAH, IT'S FOR MY MISSION FILTER ASWELL
+IT'S BETTER TO SEPARATE THEM HUH?
+*/
+.filter-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem auto;
+}
+
+mat-form-field {
+  width: 100%;
+  max-width: 300px;
+  flex: 1;
+}

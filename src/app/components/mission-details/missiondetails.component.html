@@ -1,0 +1,38 @@
+<!--WELCOME TO MY DEVASTATING MISSION DETAILS HTML (I REALLY HATE HTML)-->
+<!--THIS IS ME, JAM FURAQUE HOHOHO THE AUTHOR IT IS-->
+
+<h2 class="page-title">SpaceX Mission Details</h2>
+<div class="details-wrapper" *ngIf="launch">
+  <mat-card class="details-card">
+    <div class="details-layout">
+      <img [src]="launch.links.mission_patch_small" alt="Mission Patch" class="mission-img" />
+
+      <div class="mission-info">
+        <h3>Mission - {{ launch.mission_name }}</h3>
+        <p><strong>Name:</strong> {{ launch.mission_name }}</p>
+        <p><strong>Launch Year:</strong> {{ launch.launch_year }}</p>
+
+        <h3>Rocket</h3>
+        <p><strong>Name:</strong> {{ launch.rocket.rocket_name }}</p>
+        <p><strong>Type:</strong> {{ launch.rocket.rocket_type }}</p>
+
+        <h3>Launch Site</h3>
+        <p><strong>Name:</strong> {{ launch.launch_site.site_name_long }}</p>
+      </div>
+    </div>
+
+    <div class="section-title">Launch Details</div>
+    <p>{{ launch.details || 'No details available.' }}</p>
+
+    <div class="links-section">
+      <span><strong>More Info on Launch Details</strong></span><br />
+      <a [href]="launch.links.article_link" target="_blank">Article</a>
+      <a [href]="launch.links.wikipedia" target="_blank">Wikipedia</a>
+      <a [href]="launch.links.video_link" target="_blank">Video</a>
+    </div>
+
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="goBack()">← Back to List</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

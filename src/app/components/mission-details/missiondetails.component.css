@@ -1,0 +1,123 @@
+/*@author: Jam Furaque
+YOU, YEAH YOU.
+DO YOU KNOW THIS FILE?? YEAH, IT'S FOR MY MISSION DETAILS HOHOHO
+*/
+
+.details-wrapper {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.details-card {
+    background-color: #fff4f2;
+    color: #333;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.details-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.mission-img {
+    width: 50%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.mission-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.mission-info h3 {
+    color: #d32f2f;
+    margin: 0.5rem 0;
+}
+
+.mission-info p {
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+}
+
+.section-title {
+    font-weight: bold;
+    color: #d32f2f;
+    margin-top: 1.5rem;
+}
+
+.page-title {
+    text-align: center;
+    margin: 2rem auto 1.5rem auto;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 0 5px #66ccff;
+    font-size: 2rem;
+    width: 100%;
+}
+
+
+.links-section {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.links-section p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.links-section a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #1976d2;
+    font-weight: bold;
+}
+
+.links-section a:hover {
+    text-decoration: underline;
+}
+
+
+mat-card-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+button {
+    background-color: #1976d2;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #a6c9ef;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+    .details-layout {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+}
+
+    .mission-info {
+        text-align: left;
+        width: 100%;
+    }
+}

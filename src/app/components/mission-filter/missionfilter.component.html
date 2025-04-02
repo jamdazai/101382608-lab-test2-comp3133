@@ -1,0 +1,37 @@
+<!--@author: Jam Furaque-->
+<!--Another HTML file huh ? How can I run from this, I only want backend :( kidding lol-->
+
+<div class="filter-container">
+
+  <!-- Launch Year Filter -->
+  <mat-form-field appearance="fill">
+    <mat-label>Launch Year</mat-label>
+    <mat-select (selectionChange)="onYearChange($event)">
+      <mat-option value="">All</mat-option>
+      <mat-option *ngFor="let year of launchYears" [value]="year">
+        {{ year }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <!-- Launch Success Filter -->
+  <mat-form-field appearance="fill">
+    <mat-label>Launch Status</mat-label>
+    <mat-select (selectionChange)="onLaunchStatusChange($event.value)">
+      <mat-option *ngFor="let status of launchStatusOptions" [value]="status">
+        {{ status }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <!-- Landing Success Filter -->
+  <mat-form-field appearance="fill">
+    <mat-label>Landing Status</mat-label>
+    <mat-select (selectionChange)="onLandingStatusChange($event.value)">
+      <mat-option *ngFor="let status of landingStatusOptions" [value]="status">
+        {{ status }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</div>

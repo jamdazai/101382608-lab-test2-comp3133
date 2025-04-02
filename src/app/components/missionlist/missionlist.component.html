@@ -1,0 +1,27 @@
+<!--@author: Jam Furaque -->
+<!--I'm almost there, I'm gonna be able to run away from HTML-->
+<h2 class="page-title">SpaceX Launches</h2>
+<app-missionfilter (yearSelected)="onFilterYear($event)" (launchStatusSelected)="onFilterLaunchStatus($event)" (landingStatusSelected)="onFilterLandingStatus($event)"></app-missionfilter>
+
+<div class="launch-grid">
+    <div *ngFor="let launch of filteredLaunches" (click)="goToDetails(launch)" class="launch-wrapper">
+    <mat-card class="launch-card">
+        <mat-card-header>
+        <mat-card-title>{{ launch.mission_name }} ({{ launch.launch_year }})</mat-card-title>
+        <mat-card-subtitle>Flight #: {{ launch.flight_number }}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+        <img class="mission-img" [src]="launch.links.mission_patch_small" alt="Mission Patch" />
+        <p><strong>Details:</strong> {{ launch.details || 'No details available' }}</p>
+        <p><strong>Rocket:</strong> {{ launch.rocket.rocket_name }} ({{ launch.rocket.rocket_type }})</p>
+        </mat-card-content>
+
+        <mat-card-actions>
+        <a mat-button color="primary" [href]="launch.links.article_link" target="_blank">Article</a>
+        <a mat-button color="accent" [href]="launch.links.wikipedia" target="_blank">Wikipedia</a>
+        <a mat-button color="warn" [href]="launch.links.video_link" target="_blank">Video</a>
+        </mat-card-actions>
+    </mat-card>
+    </div>
+</div>

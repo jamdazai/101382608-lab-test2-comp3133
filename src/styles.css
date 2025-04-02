@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+/* 
+@author : Jam Furaque
+I dont want to put too much design please, I'm getting weaker :( 
+*/
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: linear-gradient(to bottom, #333, #1a1a1a); }

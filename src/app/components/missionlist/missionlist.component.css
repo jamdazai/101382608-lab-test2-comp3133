@@ -1,0 +1,60 @@
+/*@author: Jam Furaque
+OOPS I THINK THIS IS THE LAST CSS FILE FOR DESIGNS HOHOHO
+ITS FOR THE MISSION LIST, ISN'T OBVIOUS BY THE NAME? LOL KIDDING
+*/
+.launch-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+  
+.launch-wrapper {
+    width: 320px;
+    transition: transform 0.2s ease;
+}
+  
+.launch-wrapper:hover {
+    transform: scale(1.02);
+}
+  
+.launch-card {
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.mission-img {
+    display: block;
+    margin: 0 auto 1rem;
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 0 5px #66ccff;
+}
+  
+mat-card-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+mat-card-content {
+    overflow-y: auto;
+    max-height: 250px;
+}
+  
+
+
+  
